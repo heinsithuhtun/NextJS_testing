@@ -1,8 +1,11 @@
+import Image from 'next/image'
+
 const Product =({post})=>{
   return (
     <>
       <h2>Welcome to product page.</h2>
       <div>{post.title}</div>
+      <Image src={post.image} alt='picture' width='500' height='500' />
     </>
   )
 }

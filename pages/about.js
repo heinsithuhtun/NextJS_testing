@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import useRouter from 'next/router'
+import {useRouter} from 'next/router'
 
 const About =()=>{
-  const router=useRouter
+  const router=useRouter()
   console.log(router);
   const handleClick=()=>{
     router.push('/products')
